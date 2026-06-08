@@ -105,8 +105,8 @@ export default function Testimonials() {
           </p>
         </motion.div>
 
-        {/* Masonry grid */}
-        <div className="columns-1 sm:columns-2 lg:columns-3 gap-5 space-y-5">
+        {/* Review grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 items-stretch">
           {testimonials.map((t, i) => (
             <motion.div
               key={t.name}

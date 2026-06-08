@@ -212,7 +212,7 @@ export default function Hero() {
           className="text-center mb-10"
         >
           <h1
-            className="hero-page-title text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-black leading-tight tracking-tight"
+            className="hero-page-title text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black leading-tight tracking-tight"
             style={{ fontFamily: '"Playfair Display", Georgia, serif' }}
           >
             <span className="text-slate-900">Build the Future.</span>
@@ -220,19 +220,19 @@ export default function Hero() {
             <span className="gradient-text">Learn. Grow. Get Hired.</span>
           </h1>
           <p
-            className="hero-page-sub mt-4 text-slate-500 max-w-2xl mx-auto text-base sm:text-lg"
+            className="hero-page-sub mt-4 text-slate-500 max-w-2xl mx-auto text-sm sm:text-base lg:text-lg"
             style={{ fontFamily: '"Space Grotesk", "Inter", sans-serif' }}
           >
             India's most complete AI-powered technology platform — serving enterprises, colleges, and ambitious students.
           </p>
 
           {/* CTA Buttons */}
-          <div className="mt-7 flex flex-col sm:flex-row gap-3 justify-center">
+          <div className="mt-7 flex flex-col sm:flex-row gap-3 justify-center items-stretch sm:items-center">
             <motion.a
               href="#contact"
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.97 }}
-              className="hero-cta inline-flex items-center justify-center gap-2 px-7 py-3 text-sm font-bold text-white bg-[#1A56DB] hover:bg-[#1448C0] rounded-xl hover:shadow-lg hover:shadow-blue-400/30 transition-all"
+              className="hero-cta inline-flex items-center justify-center gap-2 px-7 py-3 text-sm font-bold text-white bg-[#1A56DB] hover:bg-[#1448C0] rounded-xl hover:shadow-lg hover:shadow-blue-400/30 transition-all w-full sm:w-auto"
             >
               <Rocket size={15} />
               Book Free Consultation
@@ -241,7 +241,7 @@ export default function Hero() {
               href="#lms"
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.97 }}
-              className="hero-cta inline-flex items-center justify-center gap-2 px-7 py-3 text-sm font-bold text-slate-700 bg-white border border-slate-200 rounded-xl hover:border-blue-300 hover:text-[#1A56DB] transition-all shadow-sm"
+              className="hero-cta inline-flex items-center justify-center gap-2 px-7 py-3 text-sm font-bold text-slate-700 bg-white border border-slate-200 rounded-xl hover:border-blue-300 hover:text-[#1A56DB] transition-all shadow-sm w-full sm:w-auto"
             >
               <Users size={15} />
               Explore LMS Platform
