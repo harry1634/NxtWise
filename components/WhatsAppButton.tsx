@@ -13,10 +13,10 @@ export default function WhatsAppButton() {
       <AnimatePresence>
         {open && (
           <motion.div
-            initial={{ opacity: 0, scale: 0.8, y: 20 }}
+            initial={{ opacity: 0, scale: 0.88, y: 18 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
-            exit={{ opacity: 0, scale: 0.8, y: 20 }}
-            className="bg-white rounded-2xl border border-slate-200 p-4 w-64 shadow-2xl shadow-slate-300/40"
+            exit={{ opacity: 0, scale: 0.88, y: 18 }}
+            className="w-72 rounded-3xl border border-slate-200 bg-white/95 p-4 shadow-[0_16px_40px_rgba(15,23,42,0.16)] backdrop-blur-xl"
           >
             <div className="flex items-center justify-between mb-3">
               <div className="flex items-center gap-2">
@@ -24,39 +24,39 @@ export default function WhatsAppButton() {
                   <MessageCircle size={16} className="text-white" />
                 </div>
                 <div>
-                  <div className="text-xs font-bold text-slate-800">NxtWise Support</div>
-                  <div className="flex items-center gap-1">
-                    <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
-                    <span className="text-[10px] text-slate-400">Online now</span>
+                  <div className="text-[11px] font-semibold tracking-[0.18em] text-slate-900 uppercase">NxtWise Support</div>
+                  <div className="flex items-center gap-1.5 mt-0.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                    <span className="text-[10px] font-medium text-slate-500">Available for consultation</span>
                   </div>
                 </div>
               </div>
               <button
                 onClick={() => setOpen(false)}
-                className="text-white/30 hover:text-white/70 transition-colors"
+                className="rounded-full p-1.5 text-slate-400 transition-colors hover:bg-slate-100 hover:text-slate-700"
               >
                 <X size={14} />
               </button>
             </div>
 
-            <div className="bg-slate-50 rounded-xl p-3 mb-3 border border-slate-200">
-              <p className="text-xs text-slate-600 leading-relaxed">
-                👋 Hi! Ready to transform your career? Let's talk about courses, projects, or custom tech solutions.
+            <div className="rounded-2xl border border-slate-200 bg-gradient-to-br from-slate-50 to-white p-3 mb-3">
+              <p className="text-[12px] font-medium leading-relaxed text-slate-600">
+                Connect with our team for course guidance, project consultation, or enterprise software planning.
               </p>
             </div>
 
             <div className="space-y-2">
               {[
-                { label: "📚 Course Enquiry", msg: "Hi! I'm interested in NxtWise Internship Program." },
-                { label: "💼 Tech Project", msg: "Hi! I need a tech solution for my company." },
-                { label: "🎓 Free Counseling", msg: "Hi! I'd like a free career counseling session." },
+                { label: "Course Enquiry", msg: "Hello, I would like to explore NxtWise courses and career guidance." },
+                { label: "Enterprise Solution", msg: "Hello, I would like to discuss a custom IT solution for my business." },
+                { label: "Free Career Call", msg: "Hello, I would like to book a free career counseling session." },
               ].map((opt) => (
                 <a
                   key={opt.label}
                   href={`https://wa.me/${number}?text=${encodeURIComponent(opt.msg)}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block px-3 py-2 text-xs text-slate-600 bg-slate-50 rounded-lg border border-slate-200 hover:border-green-400 hover:text-slate-900 hover:bg-green-50 transition-all"
+                  className="block rounded-xl border border-slate-200 bg-slate-50 px-3 py-2.5 text-[12px] font-semibold text-slate-700 transition-all hover:border-emerald-400 hover:bg-emerald-50 hover:text-slate-900"
                 >
                   {opt.label}
                 </a>
